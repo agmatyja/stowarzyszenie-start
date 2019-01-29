@@ -1,4 +1,4 @@
-@import "variables";
+@import "variables"; 
 @import "mixins";
 @import "normalize";
 @import "layout";
@@ -10,3 +10,167 @@
 
 /* Pages / Views */
 /*@import "pages/registration";*/
+
+body {
+background: #f5f5f2;
+}
+
+/*.clearfix:before, .row:before,
+.clearfix:after, .row:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}*/
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+[class*="col-"] {
+	float: left;
+	min-height: 1px;
+	padding: 5px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media (max-width: 767px){
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+}
+@media (min-width: 768px) {
+    /* For desktop: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+
+
+            /* HEADER */
+            
+header {
+	background: #ffffff;
+	line-height: 47px;
+	position: fixed;
+	margin: 0 0 20px auto;
+	top: 0;
+	right:0;
+	width: 100%;
+	text-align: right;
+}
+
+
+header .list {
+	list-style-type: none;
+	position: relative;
+}
+
+header .list-item {
+	display: inline-block;
+	height: 20px;
+	padding: 0 5px;
+	margin: 1px;
+	border: 1px;
+}
+
+/*topnav ul li {
+	display: block;
+}*/
+
+/* The side navigation menu */
+.sidebar {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  background-color: #333333;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: #f5f5f2;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #4CAF50;
+  color: green;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: #ffffff;
+}
+.icons {
+	width: 14px;
+	height: 14px;
+	color: #f5f5f2;
+	padding: 0 2px;
+}
+
+.orange {
+	background-color: #F58220;	
+}
+
+.bold-value {
+font-type: bold;
+}
+.blue {
+	color: #56819f;
+	font-size: 10px;	
+}
+
+.green {
+	background-color: #04ae00;
+}
+.container {
+	top: 10px;
+	/*left: 185px;*/
+	background-color: #ffffff;
+	border: 1px;
+	padding: 10px;
+	margin-top: 10px;
+	margin-left: 160px;
+}
