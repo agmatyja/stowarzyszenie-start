@@ -329,12 +329,17 @@ a.hover:hover {
 }
 
 .menu {
-	display: none;
+	overflow: hidden;
+	height: 50px;
+}
+
+.menu.show {
+	height: 100%;
 }
 
 @media(min-width: 768px) {
 	.menu {
-		display: block;
+		height: 100%;	
 	}	
 	.main {
 		padding-right: 20px;
