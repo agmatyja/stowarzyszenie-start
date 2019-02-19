@@ -79,5 +79,6 @@ typings/
 # DynamoDB Local files
 .dynamodb/
 
-css 
+/css 
+/preview
 temporary.txt
