@@ -317,6 +317,20 @@ a.hover:hover {
 	color: white;	
 }
 
+#calendar {
+	width: 170px;
+}
+
+.date-btn {
+	position: relative;
+	left: -40px;
+	top: 2px;
+	width: 0;
+	color: black;
+	cursor: pointer;
+	pointer-events: none;
+}
+
 .bold-value {
 	font-weight: bold;
 	color: gray;

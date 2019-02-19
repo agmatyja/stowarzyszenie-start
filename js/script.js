@@ -40,4 +40,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
 			}]
 		},
 	});
+	
+	flatpickr("#calendar", {
+		mode: "range",
+		dateFormat: "d.m.Y",
+		defaultDate: ["16.05.2016", "17.05.2016"]
+	});	
+
 });
