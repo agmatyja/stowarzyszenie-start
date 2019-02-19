@@ -15,23 +15,23 @@
 	
 		
 	<body>
-		<section topnav>
+		<section id="topnav">
 			<header>
 					<ul><!--
-    					--><li class="list-item"><a href="#" class="home"><span class="icon icon-wallet"></span></a><a href="#"><span class="bold-value">     $1,500.00   </span><span class="icon icon-arrow-down-small"></span></a></li><!--
-						--><li class="list-item"><a href="#" class="home"><div class="orange-dot" ></div><span class="icon icon-notification"></span></a></li><!--
-						--><li class="list-item"><a href="#" class="home"><span class="icon icon-profile"></span><span class="blue">  Leonardo Dicaprio  </span></a></li><!--
-    					--><li class="list-item"><a href="#" class="home"><span class="icon icon-quit"></span></a></li><!--
+    					--><li class="list-item"><a href="#" class="home"><span class="icon icon-wallet grey"></span></a><a href="#"><span class="bold-value">     $1,500.00   </span><span class="icon icon-arrow-down-small grey"></span></a></li><!--
+						--><li class="list-item"><a href="#" class="home"><span class="icon icon-notification grey"><span class="orange-dot"></span></span></a></li><!--
+						--><li class="list-item"><a href="#" class="home"><span class="icon icon-profile grey"></span><span class="blue">Leonardo DiCaprio</span></a></li><!--
+    					--><li class="list-item"><a href="#" class="home"><span class="icon icon-quit grey"></span></a></li><!--
 					--></ul>
 			</header>
 		</section>	
 		
 	<!-- The sidebar -->
-		<section sidebar>
+		<section id="sidebar">
 			<div class="sidebar menu">
 			
 				<a class="logo" href="#logo">
-					<img class="logo" src="images/logo.png" alt="logo">
+					<img src="images/logo2.png" alt="logo">
 					<svg class="hamburger"  version="1.1" viewBox="0 0 32 32" xml:space="preserve" 
 						xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 						<path d="M4,10h24c1.104,0,2-0.896,2-2s-0.896-2-2-2H4C2.896,6,2,6.896,2,8S2.896,10,4,10z M28,14H4c-1.104,0-2,0.896-2,2  s0.896,2,2,2h24c1.104,0,2-0.896,2-2S29.104,14,28,14z M28,22H4c-1.104,0-2,0.896-2,2s0.896,2,2,2h24c1.104,0,2-0.896,2-2  S29.104,22,28,22z"/>
@@ -45,28 +45,27 @@
 				<a class="hover" href="#"><span class="icon icon-payout"></span> Payout</a>
 				<a class="hover" href="#"><span class="icon icon-postback"></span> Postback</a>
 				
-				<section manager>
+				<section id="manager">
 					<div class="manager">
 						<a href="#">YOUR MANAGER</a>
 					</div>
 					<div class="row">
 						<div class="col-6 col-s-12">
 							<a href="#"><div class="green dot"></div>
-							<img class="photo" src="images/pexels-photo-1065090.jpeg" alt=""></div></a>
+							<img class="photo" src="images/pexels-photo-1065090.jpeg" alt=""></a>
 						</div>
 						<div class="col-6 col-s-12">
 							<h2 class="blue manager-name">Mikhael E.</h2>
 						</div>
 					</div>
 				</section>
-				<section>
-					<div> 
-						<a class="hover" href="#"><div><img class="icons" src="images/icons/wallet.svg" alt=""></a><a href="#"><span class="bold-value"> $1,500.00 </span><img class="icons" src="images/icons/arrow-down-small.svg" alt=""></div></a>
-						<a class="list-item" href="#" class="home"><div class="orange-dot"></div><img class="icons" src="images/icons/notification.svg" alt=""></a>
-						<a class="list-item" href="#" class="home"><img class="icons" src="images/icons/profile.svg" alt=""><span class="blue">  Leonardo Dicaprio  </span></a>
-						<a class="list-item" href="#" class="home"><img class="icons" src="images/icons/quit.svg" alt=""></a>
-					</div>
+				<section class="mobile">
+					<a class="hover" href="#"><span class="icon icon-wallet"></span>$1,500.00<span class="icon icon-arrow-down-small"></span></a>
+					<a class="hover" href="#"><span class="icon icon-notification"><span class="orange-dot"></span>Notifications</a>
+					<a class="hover" href="#"><span class="icon icon-profile"></span><span class="blue"></span>Leonardo DiCaprio</a>
+					<a class="hover" href="#"><span class="icon icon-quit"></span>Quit</a>
 				</section>
+			</div>
 		</section>
 		
 	<!-- Page content -->
@@ -80,6 +79,7 @@
 					<div class="center gen-stat">
 						<div>
 							<input type="text" id="calendar"/><div class="date-btn"><span class="icons icon-calendar"></span></div>	
+							</span>
 							<div class="little-btn icon icon-refresh"></div>
 						</div>
 					</div>
