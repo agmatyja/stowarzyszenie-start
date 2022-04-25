@@ -177,7 +177,7 @@ body {
             
 header {
 	//background: #487010;
-    background-color: rgba(0,0,0, 0.3);
+    background-color: $frame;
 	line-height: 48px;
 	position: fixed;
 	margin: 0 0 20px auto;
@@ -218,11 +218,11 @@ a {
 .sidebar {
   top: 0;
   margin: 0;
-  padding: 5px;
-  padding-top: 20px;
+  padding: 0;
+  padding-top: 15px;
   width: 180px;
   //background-color: #5c3612;
-  background-color: rgba(0,0,0, 0.3);
+  background-color: $frame;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -250,7 +250,13 @@ a {
 }
 
 a.hover:hover {
-	background-color: #979797;
+	//background-color: #979797;
+	//background-color: #979797;
+	//backdrop-filter: invert(70%);
+	//backdrop-filter: brightness(50%);
+	//backdrop-filter: hue-rotate(120deg);
+	backdrop-filter: sepia(90%) brightness(120%);
+	transition: 0.5s;
 }
 .mobile {
 	display: inline-block;
@@ -539,10 +545,23 @@ element.style {
     //background-position: 180px 0;
     width: 100%;
     height: 100vh;
+    padding-left: 190px;
+    padding-top: 80px;
+    content {
+        display: block;
+        margin-left: -10px;
+        margin-top: -4px;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        color:black;
+        font-size: 20px;
+        //backdrop-filter: blur(20px) brightness(100%) saturate(0.9);
+    }
 }
 
 .prawy{
-    padding-right: 30px;
+    padding-right: 14px;
     font-size: 14px;
     color: #ffffff;
 }
@@ -555,8 +574,83 @@ element.style {
   position: fixed;
   //margin-top: 90%;
   .container {
-      background-color: rgba(0,0,0, 0.3);
+      background-color: $frame;
       border: none;
       color: white;
+      height: 100px;
   }
+
+    ul {
+      position:absolute;
+      top:50%;
+      //left:50%;
+      right: 40px;
+      transform: translate(-50%, -50%);
+      margin-top: 0;
+      margin-left: -180px;
+      padding: 0;
+      display:flex;
+    }
+
+    ul li {
+      list-style: none;
+    }
+
+    ul li a {
+      position: relative;
+      width:60px;
+      height:60px;
+      display:block;
+      text-align:center;
+      margin:0 10px;
+      border-radius: 50%;
+      padding: 6px;
+      box-sizing: border-box;
+      text-decoration:none;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+      background: linear-gradient(0deg, #ddd, #fff);
+      transition: .5s;
+    }
+
+    ul li a:hover {
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+      text-decoration:none;
+    }
+
+    ul li a .fab {
+      widht: 100%;
+      height:100%;
+      display:block;
+      background: linear-gradient(0deg, #fff, #ddd);
+      border-radius: 50%;
+      line-height: calc(60px - 12px);
+      font-size:24px;
+      color: #262626;
+      transition: .5s;
+    }
+
+    ul li:nth-child(1) a:hover .fab {
+      color: #3b5998;
+    }
+
+    ul li:nth-child(2) a:hover .fab {
+      color: #00aced;
+    }
+
+    ul li:nth-child(3) a:hover .fab {
+      color: #e4405f;
+    }
+
+    ul li:nth-child(4) a:hover .fab {
+      color: #000080;
+    }
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
